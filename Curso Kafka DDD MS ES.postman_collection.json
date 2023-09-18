@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "9a5a3b37-ce56-4cff-9355-ae6594071450",
+		"name": "Curso Kafka DDD MS ES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19407113"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/api/v1/openBankAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountHolder\": \"Isra El\",\n    \"accountType\": \"CURRENT\",\n    \"openingBalance\": 777.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/openBankAccount",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"openBankAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/depositFunds/3e06830b-306f-48a1-b16c-93bdcd3c0cc5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 546\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/depositFunds/3e06830b-306f-48a1-b16c-93bdcd3c0cc5",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"depositFunds",
+						"3e06830b-306f-48a1-b16c-93bdcd3c0cc5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/withDrawFunds/bed67e6d-7437-4d95-be86-e510eebcaa21",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 177\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/v1/withDrawFunds/bed67e6d-7437-4d95-be86-e510eebcaa21",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"withDrawFunds",
+						"bed67e6d-7437-4d95-be86-e510eebcaa21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/v1/closeBankAccount/cabcfa6c-9f16-4a45-8a7d-a746b27d0f9a",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/v1/closeBankAccount/cabcfa6c-9f16-4a45-8a7d-a746b27d0f9a",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"closeBankAccount",
+						"cabcfa6c-9f16-4a45-8a7d-a746b27d0f9a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/v1/bankAccountLookup/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/v1/bankAccountLookup/",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"bankAccountLookup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/v1/bankAccountLookup/byId/3e06830b-306f-48a1-b16c-93bdcd3c0cc5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/v1/bankAccountLookup/byId/3e06830b-306f-48a1-b16c-93bdcd3c0cc5",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"bankAccountLookup",
+						"byId",
+						"3e06830b-306f-48a1-b16c-93bdcd3c0cc5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/v1/bankAccountLookup/byHolder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/v1/bankAccountLookup/byHolder/",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"bankAccountLookup",
+						"byHolder",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/api/v1/bankAccountLookup/withBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/v1/bankAccountLookup/withBalance/GREATHER_THAN/1000",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"bankAccountLookup",
+						"withBalance",
+						"GREATHER_THAN",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
